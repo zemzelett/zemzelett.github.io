@@ -3444,7 +3444,7 @@ var css_tablet_templateObject;
 function css_tablet_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var css_tablet_styles = css(css_tablet_templateObject || (css_tablet_templateObject = css_tablet_taggedTemplateLiteral(["\n\t@media (min-width: 550px) {\n\t\th1 {\n\t\t\tdisplay: block;\n\t\t}\n\n\t\tvm-message-collection {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"])));
+var css_tablet_styles = css(css_tablet_templateObject || (css_tablet_templateObject = css_tablet_taggedTemplateLiteral(["\n\t@media (min-width: 550px) {\n\t\th1 {\n\t\t\tdisplay: block;\n\t\t\tdisplay: none;\n\t\t}\n\n\t\tvm-message-collection {\n\t\t\tmargin-top: 0;\n\t\t\tmargin-top: 1rem;\n\t\t}\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/routes/trafficNews/css/desktop.js
 var css_desktop_templateObject;
@@ -3685,7 +3685,7 @@ var styles_templateObject;
 function styles_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var favoriteCollection_styles_styles = css(styles_templateObject || (styles_templateObject = styles_taggedTemplateLiteral(["\n\t.vm-favorite-collection {\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: center;\n\t}\n\n\t.vm-favorite-collection > * {\n\t\tmargin: 0.5rem;\n\t}\n"])));
+var favoriteCollection_styles_styles = css(styles_templateObject || (styles_templateObject = styles_taggedTemplateLiteral(["\n\t.vm-favorite-collection {\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: center;\n\t\tmargin-top: 1rem;\n\t}\n\n\t.vm-favorite-collection > * {\n\t\tmargin: 0.5rem;\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/components/favoriteCollection/index.js
 function favoriteCollection_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { favoriteCollection_typeof = function _typeof(obj) { return typeof obj; }; } else { favoriteCollection_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return favoriteCollection_typeof(obj); }
@@ -3769,7 +3769,7 @@ var favoriteSelection_css_main_templateObject;
 function favoriteSelection_css_main_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var favoriteSelection_css_main_styles = css(favoriteSelection_css_main_templateObject || (favoriteSelection_css_main_templateObject = favoriteSelection_css_main_taggedTemplateLiteral([""])));
+var favoriteSelection_css_main_styles = css(favoriteSelection_css_main_templateObject || (favoriteSelection_css_main_templateObject = favoriteSelection_css_main_taggedTemplateLiteral(["\n\tvm-favorite-collection {\n\t\tmax-width: 1000px;\n\t\tjustify-self: center;\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/routes/favoriteSelection/css/mobile.js
 var favoriteSelection_css_mobile_templateObject;
@@ -3777,7 +3777,7 @@ var favoriteSelection_css_mobile_templateObject;
 function favoriteSelection_css_mobile_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var favoriteSelection_css_mobile_styles = css(favoriteSelection_css_mobile_templateObject || (favoriteSelection_css_mobile_templateObject = favoriteSelection_css_mobile_taggedTemplateLiteral(["\n\th1 {\n\t\tdisplay: none;\n\t}\n\n\tvm-favorite-collection {\n\t\tmargin-top: 1rem;\n\t}\n"])));
+var favoriteSelection_css_mobile_styles = css(favoriteSelection_css_mobile_templateObject || (favoriteSelection_css_mobile_templateObject = favoriteSelection_css_mobile_taggedTemplateLiteral(["\n\th1 {\n\t\tdisplay: none;\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/routes/favoriteSelection/css/phablet.js
 var favoriteSelection_css_phablet_templateObject;
@@ -3793,7 +3793,7 @@ var favoriteSelection_css_tablet_templateObject;
 function favoriteSelection_css_tablet_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var favoriteSelection_css_tablet_styles = css(favoriteSelection_css_tablet_templateObject || (favoriteSelection_css_tablet_templateObject = favoriteSelection_css_tablet_taggedTemplateLiteral(["\n\t@media (min-width: 550px) {\n\t\th1 {\n\t\t\tdisplay: block;\n\t\t}\n\n\t\tvm-favorite-collection {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"])));
+var favoriteSelection_css_tablet_styles = css(favoriteSelection_css_tablet_templateObject || (favoriteSelection_css_tablet_templateObject = favoriteSelection_css_tablet_taggedTemplateLiteral(["\n\t@media (min-width: 550px) {\n\t\th1 {\n\t\t\tdisplay: block;\n\t\t\tdisplay: none;\n\t\t}\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/routes/favoriteSelection/css/desktop.js
 var favoriteSelection_css_desktop_templateObject;
@@ -3886,7 +3886,7 @@ var motFilter_styles_templateObject;
 function motFilter_styles_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var motFilter_styles_styles = css(motFilter_styles_templateObject || (motFilter_styles_templateObject = motFilter_styles_taggedTemplateLiteral(["\n\t:host {\n\t\t--bar-size: 2rem;\n\t\t--bar-padding: calc(var(--bar-size) / 6);\n\t}\n\n\t:host * {\n\t\tuser-select: none;\n\t}\n\n\timg {\n\t\theight: var(--bar-size);\n\t}\n\n\tli.notSelected {\n\t\tfilter: grayscale(1) opacity(0.5);\n\t}\n\n\tul {\n\t\tdisplay: inline-flex;\n\t\tlist-style: none;\n\t\talign-items: center;\n\t\t/* background-color: hsl(0, 0%, 0.5); */\n\t\tpadding: 0;\n\t\tborder: 1px solid #f0d722;\n\t\tbox-sizing: border-box;\n\t\tbackground-color: #f0d722;\n\t\t/* height: 3.5rem; */\n\t\tpadding: var(--bar-padding);\n\t\tborder-radius: var(--bar-size);\n\t\tmargin: 0;\n\t}\n\n\tli {\n\t\twidth: var(--bar-size);\n\t\theight: var(--bar-size);\n\t\tmargin-right: var(--bar-padding);\n\t\t/* cursor: pointer; */\n\t}\n\n\tli:hover {\n\t\tfilter: drop-shadow(0 0 6px var(--bg-primary));\n\t}\n\n\tli.notSelected:hover {\n\t\tfilter: grayscale(1) opacity(0.5) drop-shadow(0 0 6px var(--bg-primary));\n\t}\n\n\tul li:last-child {\n\t\tmargin-right: 0;\n\t}\n\n\t.all {\n\t\tfont-family: sans-serif;\n\t\tfont-weight: bolder;\n\t\tbackground-color: #f0d722;\n\t\tborder-radius: 50% 0% 0% 50%;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tjustify-content: center;\n\t\tbox-sizing: border-box;\n\t\tborder: 3px solid var(--bg-primary);\n\t}\n"])));
+var motFilter_styles_styles = css(motFilter_styles_templateObject || (motFilter_styles_templateObject = motFilter_styles_taggedTemplateLiteral(["\n\t:host {\n\t\t--bar-size: 2rem;\n\t\t--bar-padding: calc(var(--bar-size) / 6);\n\t}\n\n\t:host * {\n\t\tuser-select: none;\n\t}\n\n\timg {\n\t\theight: var(--bar-size);\n\t}\n\n\tli.notSelected {\n\t\tfilter: grayscale(1) opacity(0.5);\n\t}\n\n\tul {\n\t\tdisplay: inline-flex;\n\t\tlist-style: none;\n\t\talign-items: center;\n\t\t/* background-color: hsl(0, 0%, 0.5); */\n\t\tpadding: 0;\n\t\tborder: 1px solid #f0d722;\n\t\tbox-sizing: border-box;\n\t\tbackground-color: #f0d722;\n\t\t/* height: 3.5rem; */\n\t\tpadding: var(--bar-padding);\n\t\tborder-radius: var(--bar-size);\n\t\tmargin: 0;\n\t}\n\n\tli {\n\t\twidth: var(--bar-size);\n\t\theight: var(--bar-size);\n\t\tmargin-right: var(--bar-padding);\n\t\t/* cursor: pointer; */\n\t}\n\n\tli:hover {\n\t\tfilter: drop-shadow(0 0 6px var(--bg-primary));\n\t}\n\n\tli.notSelected:hover {\n\t\tfilter: grayscale(1) opacity(0.5) drop-shadow(0 0 6px var(--bg-primary));\n\t}\n\n\tul li:last-child {\n\t\tmargin-right: 0;\n\t}\n\n\t.all {\n\t\tfont-family: sans-serif;\n\t\tfont-weight: bolder;\n\t\tbackground-color: #f0d722;\n\t\tborder-radius: 50% 0% 0% 50%;\n\t\tdisplay: flex;\n\t\talign-items: center;\n\t\tjustify-content: center;\n\t\tbox-sizing: border-box;\n\t\tborder: 3px solid rgb(89, 91, 98);\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/components/motFilter/index.js
 function motFilter_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { motFilter_typeof = function _typeof(obj) { return typeof obj; }; } else { motFilter_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return motFilter_typeof(obj); }
@@ -4124,7 +4124,7 @@ var mainNavigation_css_main_templateObject;
 function mainNavigation_css_main_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var mainNavigation_css_main_styles = css(mainNavigation_css_main_templateObject || (mainNavigation_css_main_templateObject = mainNavigation_css_main_taggedTemplateLiteral(["\n\tnav {\n\t\tbackground-color: #595b62;\n\t}\n\n\tul {\n\t\theight: 3rem;\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t\tlist-style: none;\n\t\tdisplay: grid;\n\t\tgrid-template-columns: 1fr 1fr 1fr 3rem;\n\t\tjustify-content: space-evenly;\n\t\talign-items: center;\n\t\tcolor: rgb(240, 215, 34);\n\t\tfont-weight: bolder;\n\t}\n"])));
+var mainNavigation_css_main_styles = css(mainNavigation_css_main_templateObject || (mainNavigation_css_main_templateObject = mainNavigation_css_main_taggedTemplateLiteral(["\n\tnav {\n\t\tbackground-color: #595b62;\n\t}\n\n\tul {\n\t\theight: 3rem;\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t\tlist-style: none;\n\t\tdisplay: grid;\n\t\tgrid-template-columns: 1fr 1fr 1fr 3rem;\n\t\tjustify-content: space-evenly;\n\t\talign-items: center;\n\t\tcolor: rgb(240, 215, 34);\n\t\tfont-weight: bolder;\n\t}\n\n\tli.selected {\n\t\tbackground-color: rgb(240, 215, 34);\n\t\tcolor: black;\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/mainNavigation/css/mobile.js
 var mainNavigation_css_mobile_templateObject;
@@ -4207,33 +4207,22 @@ var MainNavigation = /*#__PURE__*/function (_LitElement) {
 
     mainNavigation_classCallCheck(this, MainNavigation);
 
-    _this = _super.call(this); // this.data = JSON.parse(localStorage.getItem("data"));
-    // this.motFilter = [true, true, true, true];
-    // this.textFilter = "";
-    // this.filteredData = this.data;
-
+    _this = _super.call(this);
     _this.filterBar = false;
     return _this;
-  } // static get properties() {
-  // 	return {
-  // 		data: { type: Object },
-  // 		motFilter: { type: Array },
-  // 		textFilter: { type: String },
-  // 		favorites: { type: Object },
-  // 	};
-  // }
-
+  }
 
   mainNavigation_createClass(MainNavigation, [{
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      return html(mainNavigation_templateObject || (mainNavigation_templateObject = mainNavigation_taggedTemplateLiteral(["\n\t\t\t<nav>\n\t\t\t\t<ul>\n\t\t\t\t\t<li @click=\"", "\">\n\t\t\t\t\t\tAlle Meldungen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li @click=\"", "\">\n\t\t\t\t\t\tFavoriten anzeigen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li @click=\"", "\">\n\t\t\t\t\t\tFavoriten w\xE4hlen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li @click=\"", "\">\n\t\t\t\t\t\t<img src=\"/img/funnel.svg\" alt=\"Filter\" class=\"filter\" />\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"filters ", "\">\n\t\t\t\t\t<vm-mot-filter class=\"motFilter\"></vm-mot-filter>\n\t\t\t\t\t<vm-text-filter class=\"textFilter\"></vm-text-filter>\n\t\t\t\t\t<div class=\"back\">\n\t\t\t\t\t\t<img\n\t\t\t\t\t\t\tsrc=\"/img/arrow-right-circle.svg\"\n\t\t\t\t\t\t\talt=\"Zur\xFCck\"\n\t\t\t\t\t\t\t@click=\"", "\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</nav>\n\t\t"])), function () {
+      var selected = window.location.href.split("#")[1];
+      return html(mainNavigation_templateObject || (mainNavigation_templateObject = mainNavigation_taggedTemplateLiteral(["\n\t\t\t<nav>\n\t\t\t\t<ul>\n\t\t\t\t\t<li\n\t\t\t\t\t\tclass=\"", "\"\n\t\t\t\t\t\t@click=\"", "\"\n\t\t\t\t\t>\n\t\t\t\t\t\tAlle Meldungen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li\n\t\t\t\t\t\tclass=\"", "\"\n\t\t\t\t\t\t@click=\"", "\"\n\t\t\t\t\t>\n\t\t\t\t\t\tFavoriten anzeigen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li\n\t\t\t\t\t\tclass=\"", "\"\n\t\t\t\t\t\t@click=\"", "\"\n\t\t\t\t\t>\n\t\t\t\t\t\tFavoriten w\xE4hlen\n\t\t\t\t\t</li>\n\t\t\t\t\t<li @click=\"", "\">\n\t\t\t\t\t\t<img src=\"/img/funnel.svg\" alt=\"Filter\" class=\"filter\" />\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"filters ", "\">\n\t\t\t\t\t<vm-mot-filter class=\"motFilter\"></vm-mot-filter>\n\t\t\t\t\t<vm-text-filter class=\"textFilter\"></vm-text-filter>\n\t\t\t\t\t<div class=\"back\">\n\t\t\t\t\t\t<img\n\t\t\t\t\t\t\tsrc=\"/img/arrow-right-circle.svg\"\n\t\t\t\t\t\t\talt=\"Zur\xFCck\"\n\t\t\t\t\t\t\t@click=\"", "\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</nav>\n\t\t"])), selected === "trafficNews" ? "selected" : "", function () {
         return _this2.changePage("trafficNews");
-      }, function () {
+      }, selected === "showFavorites" ? "selected" : "", function () {
         return _this2.changePage("showFavorites");
-      }, function () {
+      }, selected === "favoriteSelection" ? "selected" : "", function () {
         return _this2.changePage("favoriteSelection");
       }, this.toggleFilterBar, this.filterBar ? "active" : "", this.toggleFilterBar);
     }
@@ -4247,6 +4236,7 @@ var MainNavigation = /*#__PURE__*/function (_LitElement) {
         composed: true,
         cancelable: true
       }));
+      this.requestUpdate();
     }
   }, {
     key: "toggleFilterBar",
@@ -4278,7 +4268,7 @@ var app_css_mobile_templateObject;
 function app_css_mobile_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var app_css_mobile_styles = css(app_css_mobile_templateObject || (app_css_mobile_templateObject = app_css_mobile_taggedTemplateLiteral(["\n\t:host {\n\t\twidth: 100vw;\n\t\theight: 100vh;\n\t\tdisplay: grid;\n\t\tgrid-template-rows: 1fr 3rem;\n\t}\n\n\t.main-nav {\n\t\tgrid-row: 2;\n\t}\n\n\t.traffic-news,\n\t.favorite-selection {\n\t\toverflow-y: auto;\n\t}\n"])));
+var app_css_mobile_styles = css(app_css_mobile_templateObject || (app_css_mobile_templateObject = app_css_mobile_taggedTemplateLiteral(["\n\t:host {\n\t\twidth: 100vw;\n\t\t/* height: 100vh; */\n\t\t/* Chrome ANdroid accounts it's address bar into the vh... */\n\t\theight: 100%;\n\t\tposition: absolute;\n\t\tdisplay: grid;\n\t\tgrid-template-rows: 1fr 3rem;\n\t}\n\n\t.main-nav {\n\t\tgrid-row: 2;\n\t}\n\n\t.traffic-news,\n\t.favorite-selection {\n\t\toverflow-y: auto;\n\t}\n"])));
 
 ;// CONCATENATED MODULE: ./src/app/css/phablet.js
 var app_css_phablet_templateObject;
