@@ -25,7 +25,6 @@ self.addEventListener("install", (e) => {
 		"/img/U12.svg",
 		"/img/U55.svg",
 	];
-	console.log("[Service Worker] Install");
 	e.waitUntil(
 		caches.open(cacheName).then((cache) => {
 			return cache.addAll(appFiles);
