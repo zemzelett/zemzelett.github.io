@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BVG Verkehrsmeldungen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="/img/navi-32.png" />
+		<link rel="manifest" href="manifest.json" />
+		<script type="module" src="dist/app.js"></script>
+		<style>
+			html {
+				--bg-primary: hsl(0, 0%, 86%);
+				--bg-secondary: #fcffff;
+				background-color: var(--bg-primary);
+				font-family: sans-serif;
+			}
+
+			body {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			// Dirty setup in order to make up for slow API...
+			if (!localStorage.getItem("populated")) {
+				fetch("/api-response/res.json")
+					.then((res) => res.json())
+					.then((data) => {
+						localStorage.setItem("data", JSON.stringify(data));
+						localStorage.setItem("filtered-data", JSON.stringify(data));
+
+						fetch("/data/lines.json")
+							.then((res) => res.json())
+							.then((data) => {
+								localStorage.setItem("lines", JSON.stringify(data));
+								const lines = JSON.parse(localStorage.getItem("lines"));
+								const favorites = { 1: {}, 2: {}, 3: {}, 4: {} };
+								Object.entries(lines).map((entry) => {
+									const mot = entry[0];
+									const lines = entry[1];
+
+									return lines.forEach((line) => {
+										favorites[mot][line] = false;
+									});
+								});
+								localStorage.setItem("favorites", JSON.stringify(favorites));
+								localStorage.setItem("populated", true);
+								document.body.appendChild(document.createElement("vm-app"));
+							});
+					});
+			} else {
+				document.body.appendChild(document.createElement("vm-app"));
+			}
+
+			// PWA, yay!
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("/sw.js");
+			}
+		</script>
+		<!-- <vm-app></vm-app> -->
+	</body>
+</html>
